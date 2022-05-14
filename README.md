@@ -1,21 +1,21 @@
 ## Useful Commands
+
 delete-images:
-	docker image prune -a -f
+`docker image prune -a -f`
 
 stop-containers:
-	docker-compose -f docker-compose.yaml down
+`docker-compose -f docker-compose.yaml down`
 
 build-images:
-	docker-compose -f docker-compose.yaml build
+`docker-compose -f docker-compose.yaml build`
 
 run-containers:
-	docker-compose -f docker-compose.yaml up -d
-
-
+`docker-compose -f docker-compose.yaml up -d`
 
 ## Nginx Container default values:
 
-$ /etc/nginx # cat nginx.conf
+$ cat /etc/nginx/nginx.conf
+
 ```
 user  nginx;
 worker_processes  auto;
@@ -50,8 +50,8 @@ http {
 }
 ```
 
+$ ls /usr/lib/nginx/modules
 
-$ /usr/lib/nginx/modules # ls
 ```
 ngx_http_geoip_module-debug.so         ngx_http_image_filter_module.so        ngx_http_xslt_filter_module-debug.so   ngx_stream_geoip_module.so
 ngx_http_geoip_module.so               ngx_http_js_module-debug.so            ngx_http_xslt_filter_module.so         ngx_stream_js_module-debug.so
